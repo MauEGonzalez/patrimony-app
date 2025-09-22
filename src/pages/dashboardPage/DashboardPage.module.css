@@ -1,0 +1,30 @@
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .mainGrid {
+        /* Definimos una grilla de 2 columnas */
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* --- NUEVO: Estilo para el contenedor del gráfico --- */
+.chartSection {
+    margin-top: 2rem;
+}
+
+/* Hacemos que ocupe las dos columnas en pantallas grandes */
+@media (min-width: 1024px) {
+    .chartSection {
+        grid-column: 1 / -1; /* Ocupa desde la primera a la última columna */
+    }
+}

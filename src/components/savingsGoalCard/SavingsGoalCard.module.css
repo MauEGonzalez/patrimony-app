@@ -1,0 +1,94 @@
+.card {
+    background-color: #1f2937;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #374151;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.goalName {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.deleteButton {
+    background: none;
+    border: none;
+    color: #6b7280;
+    cursor: pointer;
+    padding: 0;
+}
+.deleteButton:hover { color: #f87171; }
+
+.amounts {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #9ca3af;
+}
+
+.currentAmount {
+    font-weight: bold;
+    color: white;
+}
+
+.progressBarContainer {
+    width: 100%;
+    background-color: #374151;
+    border-radius: 9999px;
+    height: 10px;
+}
+
+.progressBar {
+    height: 100%;
+    background-color: #4ade80;
+    border-radius: 9999px;
+    transition: width 0.5s ease-in-out;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.input {
+    flex-grow: 1;
+    background-color: #374151;
+    border: 1px solid #4b5563;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+}
+
+.button {
+    background-color: #0ea5e9;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #38bdf8;
+}
+
+/* --- NUEVO: Estilo para el botón de retirar --- */
+.withdrawButton {
+    background-color: #f97316; /* Naranja para diferenciar */
+}
+.withdrawButton:hover {
+    background-color: #fb923c;
+}

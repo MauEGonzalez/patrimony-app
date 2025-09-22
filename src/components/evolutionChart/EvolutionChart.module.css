@@ -1,0 +1,18 @@
+.chartWrapper {
+    background-color: #1f2937;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #374151;
+    /* Damos una altura mínima para que el gráfico se vea bien */
+    min-height: 400px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #d1d5db;
+    margin-bottom: 2rem;
+    text-align: left;
+}

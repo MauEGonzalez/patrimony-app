@@ -1,0 +1,118 @@
+.header {
+    height: 60px;
+    background-color: #1f2937;
+    border-bottom: 1px solid #374151;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.leftSection {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menuButton {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+}
+.menuButton:hover { color: white; }
+
+/* Estilo para el enlace del logo */
+.logoLink {
+    text-decoration: none;
+}
+
+.logoContainer {
+    display: none; 
+}
+
+@media (min-width: 768px) {
+    .logoContainer {
+        display: block;
+        text-align: center;
+    }
+}
+
+.logoTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #38bdf8;
+    line-height: 1;
+}
+
+.logoSubtitle {
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+
+.userMenu {
+    position: relative;
+}
+
+.userButton {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.userButton:hover { color: white; }
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #374151;
+}
+
+.dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    width: 220px;
+    background-color: #374151;
+    border-radius: 0.5rem;
+    border: 1px solid #4b5563;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.dropdownHeader {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #4b5563;
+    font-size: 0.875rem;
+    color: #9ca3af;
+}
+.dropdownHeader strong {
+    color: white;
+    word-break: break-all;
+}
+
+.dropdownItem {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: #d1d5db;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.dropdownItem:hover {
+    background-color: #4b5563;
+}
+
+.logoutButton { color: #f87171; }
+.logoutButton:hover { background-color: #ef4444; color: white; }

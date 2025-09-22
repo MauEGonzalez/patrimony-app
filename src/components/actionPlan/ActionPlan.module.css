@@ -1,0 +1,42 @@
+.card {
+    background-color: #1f2937; /* bg-gray-800 */
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border: 1px solid #374151; /* border-gray-700 */
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #38bdf8; /* text-sky-400 */
+    margin-bottom: 1rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.iconWrapper svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #38bdf8; /* text-sky-400 */
+}
+
+.message {
+    color: #d1d5db; /* text-gray-300 */
+}
+
+.target {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: white;
+}
+
+.details {
+    font-size: 0.875rem;
+    color: #9ca3af; /* text-gray-400 */
+    margin-top: 0.25rem;
+}

@@ -1,0 +1,54 @@
+.bar {
+    background-color: #1f2937;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #374151;
+    display: flex;
+    flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex-grow: 1; /* Para que ocupen el espacio disponible */
+}
+
+.label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #9ca3af;
+}
+
+.input, .dateInput {
+    background-color: #374151;
+    border: 1px solid #4b5563;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    color: white;
+    outline: none;
+    min-width: 150px;
+}
+
+.input:focus, .dateInput:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 2px #38bdf8;
+}
+
+.button {
+    background-color: #4b5563;
+    color: #d1d5db;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    align-self: flex-end; /* Alinear con la parte de abajo de los inputs */
+}
+
+.button:hover {
+    background-color: #6b7280;
+}

@@ -1,0 +1,23 @@
+.chartContainer {
+    background-color: #1f2937;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #374151;
+    height: 400px; /* Altura fija para el contenedor del gráfico */
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #d1d5db;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.noDataText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #6b7280;
+}
