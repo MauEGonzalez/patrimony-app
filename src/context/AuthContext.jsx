@@ -1,3 +1,5 @@
+// src/context/AuthContext.jsx (CON MEJORA OPCIONAL)
+
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
@@ -23,9 +25,19 @@ export default function AuthProvider({ children }) {
 
   const value = {
     currentUser,
-    loading, // <-- Es crucial pasar el estado de carga
+    loading,
   };
 
+  // Si aún está cargando, mostramos un loader general.
+  if (loading) {
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#111827', color: 'white' }}>
+        <h2>Cargando Patrimony...</h2>
+      </div>
+    );
+  }
+
+  // Una vez que termina de cargar, renderizamos la app.
   return (
     <AuthContext.Provider value={value}>
       {children}

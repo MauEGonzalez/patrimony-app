@@ -1,6 +1,8 @@
+// src/firebaseConfig.js (CORREGIDO)
+
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { getAuth, signInAnonymously } from "firebase/auth";
+import { getAuth } from "firebase/auth"; // Ya no importamos signInAnonymously
 
 const firebaseConfig = {
   apiKey: "AIzaSyALxCtf9jMsNFmNJ_-u_hi6mEZ6bP9-N3E",
@@ -15,6 +17,4 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth(app);
 
-signInAnonymously(auth).catch((error) => {
-  console.error("Anonymous sign-in failed:", error);
-});
+// Ya no iniciamos sesión anónimamente aquí.
